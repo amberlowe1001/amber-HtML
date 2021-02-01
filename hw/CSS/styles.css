@@ -1,0 +1,267 @@
+ body,
+ html {
+     font-family: "Arial", sans-serif;
+     font-size: 14px;
+ }
+ 
+ html {
+     display: flex;
+     margin: 0 auto;
+     /*background-color: red; */
+ }
+ 
+ body,
+ html {
+     margin: 0 auto;
+ }
+ 
+ body {
+     padding: 15px 10px;
+ }
+ 
+ footer::before,
+ header::before,
+ main::before {
+     color: #7fc1ff;
+ }
+ 
+ footer,
+ header,
+ main {
+     background-color: #f3faff;
+     border: 2px solid #7fc1ff;
+     width: 446px;
+ }
+ 
+ article,
+ aside,
+ nav,
+ section {
+     background-color: #f9f7ff;
+     border: 2px solid #9779ec;
+ }
+ 
+ article::before,
+ aside::before,
+ nav::before,
+ section::before {
+     color: #9779ec;
+ }
+ 
+ h1,
+ p {
+     background-color: #fff;
+ }
+ 
+ h1 {
+     font-size: 18px;
+     border: 2px solid #ff994f;
+ }
+ 
+ h1::before {
+     content: "h1";
+     color: #ff994f;
+ }
+ 
+ p {
+     border: 2px solid #f36dff;
+     position: relative;
+     padding: 16px 15px 10px;
+     border-radius: 4px;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     -ms-border-radius: 4px;
+     -o-border-radius: 4px;
+ }
+ 
+ :not(:last-child) {
+     margin-bottom: 10px;
+ }
+ 
+ ::before {
+     position: absolute;
+     top: 3px;
+     left: 5px;
+     font-weight: 700;
+     font-size: 11px;
+     line-height: 10px;
+     letter-spacing: .04em;
+ }
+ 
+ .nav ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ nav ul a {
+     padding: 0;
+ }
+ 
+ main::before {
+     content: "main";
+ }
+ 
+ header::before {
+     content: "header";
+ }
+ 
+ footer::before {
+     content: "footer";
+ }
+ 
+ section::before {
+     content: "section";
+ }
+ 
+ article::before {
+     content: "article";
+ }
+ 
+ aside::before {
+     content: "aside";
+ }
+ 
+ nav::before {
+     content: "nav";
+ }
+ 
+ p::before {
+     flex-wrap: nowrap;
+     content: "p";
+     color: #f36dff;
+ }
+ 
+ main {
+     display: grid;
+     grid-template-areas: "nav nav sidebar""columns columns sidebar";
+ }
+ 
+ main>nav {
+     grid-area: nav;
+     margin-right: 10px;
+ }
+ 
+ main>nav+section:last-of-type {
+     grid-area: columns;
+     display: flex;
+     justify-content: space-around;
+     margin-right: 10px;
+     margin-bottom: 0;
+ }
+ 
+ main>nav+section>p:not(:only-child) {
+     margin-bottom: 0;
+ }
+ 
+ main>nav+section>p:not(:last-child) {
+     margin-right: 10px;
+ }
+ 
+ main>aside {
+     grid-area: sidebar;
+ }
+ 
+ .container {
+     /*  margin: 0 auto; */
+     display: flex;
+     margin: 0 auto;
+     max-width: 100%;
+ }
+ 
+ .header {
+     display: flex;
+     padding: 15px;
+     max-width: 100%;
+     justify-content: space-around;
+ }
+ 
+ .content {
+     margin: 5px;
+     padding: 10px;
+     max-width: 100%;
+ }
+ 
+ .nav nav-a {
+     /* display: flex; */
+     /* flex: center; */
+     padding: 5px;
+ }
+ 
+ .nav-a {
+     padding: 15px;
+     flex: justify-content;
+     /* flex  : center; */
+     font-size: 29px;
+ }
+ 
+ p {
+     /*  flex-wrap: column; */
+     padding: 10px;
+     margin: 0;
+ }
+ 
+ .ingredients h2 {
+     padding: 10 20 10 20;
+     font-size: 22px;
+     display: flex;
+ }
+ 
+ .main_section {
+     padding: 40px;
+     /*  margin: auto; */
+     display: flex;
+ }
+ 
+ h1 {
+     font-size: 38px;
+ }
+ 
+ h2 {
+     font-family: monospace;
+     font-size: 20px;
+ }
+ 
+ .title {
+     display: flex;
+     padding: 10px;
+ }
+ 
+ .directions-step1 {
+     padding: 15px;
+ }
+ 
+ .title-dir {
+     flex: justify-content;
+ }
+ 
+ .side-bar {
+     display: flex;
+     /* flex-direction: column; */
+     padding: 5px;
+ }
+ 
+ .step1 {
+     /*  flex: center; */
+     padding: 10px;
+     margin: 5px;
+ }
+ 
+ .step2 {
+     display: flex;
+     justify-content: center;
+     padding: 10px;
+     margin: 5px;
+ }
+ /* .ground-beef .eggs { */
+ /* flex: center; */
+ /* padding: 10px; */
+ /* margin: 5px; */
+ /* border: black; */
+ /* max-width: 100%; */
+ /* } */
+ /* .flex-container-main_section { */
+ /* display: flex; */
+ /* } */
